@@ -21,6 +21,9 @@ section{
     margin-block: 2em;
     border-radius: 15px;
     padding-block-end: 2em;
+    display: flex;
+    flex-direction: column;
+
     
 }
 .mobile-img{
@@ -32,7 +35,9 @@ section{
 }
 article{
     padding:1.2em;
-    background:var(--White)
+    background:var(--White);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 h1{
@@ -108,6 +113,7 @@ h2{
         display:flex;
         flex-direction: row;   
         flex-wrap: nowrap;
+        
     }
     .desktop-img{
         border-top-left-radius: 15px;

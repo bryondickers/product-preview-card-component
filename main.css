@@ -1,0 +1,129 @@
+:root{
+    --primary:hsl(158, 36%, 37%);
+    --secondary:hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    background:var(--secondary);
+    block-size: 100%;
+  
+}
+
+section{
+    padding: 0;
+    max-inline-size: 95%;
+    block-size: 80%;
+    margin-inline: auto;
+    margin-block: 2em;
+    border-radius: 15px;
+    padding-block-end: 2em;
+    
+}
+.mobile-img{
+    
+    inline-size:100%;
+    block-size:auto;
+    border-top-right-radius: 15px;
+    border-top-left-radius:15px ;
+}
+article{
+    padding:1.2em;
+    background:var(--White)
+}
+
+h1{
+    color: var(--Dark-grayish-blue);
+    font-size:small;
+    letter-spacing:3px ;
+    color:var(--Dark-grayish-blue);
+}
+h2{
+    font-size: 1.5rem;
+    color:var(--dark-blue)
+}
+.desktop-img{
+    display: none;
+}
+.content{
+    font-size: small;
+    line-height: 1.8;
+    margin-bottom:0;
+    color: var(--Dark-grayish-blue);
+}
+.cost-flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block-start: 20px;
+    justify-content: start;
+    margin-top: 0;
+    
+}
+
+
+.cost{
+    
+    font-size: xx-large;
+    font-family: "Abhaya Libre" ;
+    font-weight:bolder;
+    font-style:bold;
+    color:var(--primary);
+}
+.cost-strike{
+    color:var(--Dark-grayish-blue);
+    font-size:small;
+    text-decoration: line-through;
+
+}
+.add-button{
+    box-sizing: border-box;
+    inline-size: 100%;
+    background: var(--primary);
+    padding: 0.8em;
+    border-radius: 7px;
+    display: inline-block;
+    color: var(--White);
+    text-decoration:none;
+    text-align: center;
+}
+.add-button:hover{
+    background: var(--dark-blue);
+}
+@media only screen and (min-width: 460px) {
+    section{
+      max-inline-size:50%;
+    }
+  }
+@media only screen and (min-width:872px) {
+    
+    .mobile-img{
+        display: none;
+    }
+    
+    section{
+        display:flex;
+        flex-direction: row;   
+        flex-wrap: nowrap;
+    }
+    .desktop-img{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        display: block;
+        inline-size: 100%;
+        max-inline-size: 280px;
+        block-size:auto ;
+        flex: 1;
+        object-fit:cover;
+     }
+     article{
+        flex: 1;
+        max-inline-size: 280px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+     }
+
+}

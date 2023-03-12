@@ -10,7 +10,11 @@
 body{
     background:var(--secondary);
     block-size: 100%;
-  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 section{

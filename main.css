@@ -17,7 +17,7 @@ body{
     flex-direction: column;
 }
 
-section{
+main{
     padding: 0;
     max-inline-size: 95%;
     block-size: 80%;
@@ -44,7 +44,7 @@ article{
     border-bottom-left-radius: 15px;
 }
 
-h1{
+p{
     color: var(--Dark-grayish-blue);
     font-size:small;
     letter-spacing:3px ;
@@ -103,7 +103,7 @@ h2{
     background: var(--dark-blue);
 }
 @media only screen and (min-width: 460px) {
-    section{
+    main{
       max-inline-size:50%;
     }
   }
@@ -113,7 +113,7 @@ h2{
         display: none;
     }
     
-    section{
+    main{
         display:flex;
         flex-direction: row;   
         flex-wrap: nowrap;
